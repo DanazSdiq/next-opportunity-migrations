@@ -4,7 +4,7 @@ export async function up(knex: Knex): Promise<void> {
   const doesTableExist = await knex.schema.hasTable("opportunities");
   if (!doesTableExist) {
     return knex.schema.createTable("opportunities", (table) => {
-      table.uuid("id").primary();
+      table.uuid("id").primary().defaultTo(knex.raw("gen_random_uuid()"));
       table.text("title").notNullable();
       table
         .uuid("organization_id")
