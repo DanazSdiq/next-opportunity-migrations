@@ -9,7 +9,7 @@
     "migrate:up:dev": "NODE_ENV=development npm run migrate:latest",
     "migrate:up:prod": "NODE_ENV=production npm run migrate:latest",
     "migrate:down:dev": "NODE_ENV=development npm run migrate:down",
-    "migarte:down:prod": "NODE_ENV=production npm run migrate:down"
+    "migrate:down:prod": "NODE_ENV=production npm run migrate:down"
   },
   "keywords": [],
   "author": "DanazSdiq",
