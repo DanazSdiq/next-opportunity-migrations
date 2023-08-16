@@ -1,0 +1,27 @@
+{
+  "name": "next-opportunity-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "migrate:down": "knex migrate:down --knexfile ./opportunities.knexfile.ts",
+    "migrate:latest": "knex migrate:latest --knexfile ./opportunities.knexfile.ts",
+    "migrate:up:dev": "NODE_ENV=development npm run migrate:latest",
+    "migrate:up:prod": "NODE_ENV=production npm run migrate:latest",
+    "migrate:down:dev": "NODE_ENV=development npm run migrate:down",
+    "migarte:down:prod": "NODE_ENV=production npm run migrate:down"
+  },
+  "keywords": [],
+  "author": "DanazSdiq",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "knex": "^2.5.1",
+    "pg": "^8.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
