@@ -1,6 +1,6 @@
 # Next Opportunity Migrations
 
-This repository is the migration repository. Basically contains all the necessary DB migrations to create the necessary tables and put them all together. This is built using TypeScript and Knex as a query builder.
+This is the migration repository of the next opportunities. The repo has all the DB migrations necessary to create the tables. This is built using TypeScript and Knex as a query builder.
 
 ## Run Functioning Instance Locally
 Head over to [this repository](https://github.com/DanazSdiq/next-opportunity-docker) and follow the instructions on README page 
